@@ -1,0 +1,122 @@
+@import "../common/mixin";
+
+.f-df {
+  display: flex;
+}
+
+.f-fdc {
+  flex-direction: column;
+}
+
+.f-jcc {
+  justify-content: center;
+}
+
+.f-jce {
+  justify-content: flex-end;
+}
+
+.f-jcb {
+  justify-content: space-between;
+}
+
+.f-aic {
+  align-items: center;
+}
+
+.f-ais {
+  align-items: flex-start;
+}
+
+.f-aie {
+  align-items: flex-end;
+}
+
+.f-jac {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-fx1 {
+  flex: 1;
+}
+
+.f-fww {
+  flex-wrap: wrap;
+}
+
+.t-tal {
+  text-align: left;
+}
+
+.t-tac {
+  text-align: center;
+}
+
+.t-tar {
+  text-align: right;
+}
+
+.o-oh {
+  overflow: hidden;
+}
+
+.p-pr {
+  position: relative;
+}
+
+.p-pa {
+  position: absolute;
+}
+
+.p-pf {
+  position: fixed;
+}
+
+.m-mt15 {
+  margin-top: 15px;
+}
+
+.m-mb15 {
+  margin-bottom: 15px;
+}
+
+.m-mt5 {
+  margin-top: 5px;
+}
+
+.m-mb5 {
+  margin-bottom: 5px;
+}
+
+.p-p15 {
+  padding: 15px;
+}
+
+.p-pt15 {
+  padding-top: 15px;
+}
+
+.p-pb15 {
+  padding-bottom: 15px;
+}
+
+.p-ph15 {
+  padding: 0 15px;
+}
+
+.p-ph20 {
+  padding: 0 20px;
+}
+
+.p-pv15 {
+  padding: 15px 0;
+}
+
+.line-one {
+  @include ellipsis;
+}
+
+.line-two {
+  @include ellipsis(2);
+}

@@ -1,0 +1,67 @@
+// 1px border
+@svg 1px-border {
+  height: 2px;
+  @rect {
+    fill: var(--color, #e9e9e9);
+    width: 100%;
+    height: 50%;
+  }
+}
+@mixin border1 {
+  border-image: svg(1px-border param(--color #e9e9e9)) 2 2 stretch;
+}
+
+@mixin ps0 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// wh
+@mixin wh($size) {
+  width: $size;
+  height: $size;
+}
+
+// transition
+@mixin ts($type, $type2:'') {
+  @if $type2 != '' {
+    transition: $type .3s cubic-bezier(0.165, 0.84, 0.44, 1), $type2 .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  } @else {
+    transition: $type .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
+// 单行省略号
+@mixin ellipsis($line:1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin thumb {
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  padding: 2px;
+  @include wh(6px);
+  background: white;
+  border-radius: 50%;
+  @include ts(transform);
+}
+
+@mixin thumbActive {
+  transform: scale(2);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1), -1px -1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin track {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: white;
+}

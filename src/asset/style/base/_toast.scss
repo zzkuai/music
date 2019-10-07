@@ -1,0 +1,56 @@
+@import "../common/color";
+
+.toast {
+  position: fixed;
+  left: 50%;
+  opacity: 0;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  z-index: 1001;
+  transform: translate3d(-50%, 0, 0);
+
+  &.bottom {
+    bottom: 0;
+    animation: toast-bottom .3s ease-out forwards;
+  }
+
+  &.center {
+    top: 50%;
+    animation: toast-center .3s ease-out forwards;
+  }
+
+  &.ignore {
+    font-size: 12px;
+  }
+}
+
+@keyframes toast-bottom {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  80% {
+    bottom: 55px;
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes toast-center {
+  0% {
+    transform: translate3d(-50%, -50%, 0) scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: translate3d(-50%, -50%, 0) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}

@@ -1,0 +1,80 @@
+@import "../common/color";
+
+
+[data-theme="day"] {
+  .theme-title {
+    color: $day-title;
+  }
+
+  .theme-text {
+    color: $day-text;
+  }
+
+  .theme-white {
+    color: $white;
+  }
+
+  .theme-bg {
+    background-color: $day-bg;
+  }
+
+  .theme-bg2 {
+    background-color: $day-bg2;
+  }
+
+  .theme-br {
+    border-color: $day-br;
+  }
+
+  .theme {
+    background-color: $day-theme;
+  }
+
+  .theme-bg-reverse {
+    background-color: $day-reverse;
+  }
+
+  .theme-active {
+    color: $day-theme;
+    background-color: $day-red;
+  }
+}
+
+[data-theme="night"] {
+  .theme-title {
+    color: $night-title;
+  }
+
+  .theme-text {
+    color: $night-text;
+  }
+
+  .theme-white {
+    color: $white;
+  }
+
+  .theme-bg {
+    background-color: $night-bg;
+  }
+
+  .theme-bg2 {
+    background-color: $night-bg2;
+  }
+
+  .theme-br {
+    border-color: $night-br;
+  }
+
+  .theme {
+    background-color: $night-theme;
+  }
+
+  .theme-bg-reverse {
+    background-color: $night-reverse;
+  }
+
+  .theme-active {
+    color: $night-reverse;
+    background-color: $night-red;
+  }
+}

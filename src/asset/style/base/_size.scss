@@ -1,0 +1,37 @@
+@import "../common/mixin";
+
+.size-si {
+  @include wh(10px);
+}
+
+.size-ss {
+  @include wh(12px);
+}
+
+.size-sm {
+  @include wh(14px);
+}
+
+.size-md {
+  @include wh(16px);
+}
+
+.size-mg {
+  @include wh(18px);
+}
+
+.size-lg {
+  @include wh(20px);
+}
+
+.size-gg {
+  @include wh(22px);
+}
+
+.size-ll {
+  @include wh(24px);
+}
+
+.size-xl {
+  @include wh(40px);
+}
