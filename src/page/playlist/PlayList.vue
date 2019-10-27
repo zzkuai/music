@@ -126,7 +126,7 @@
                         this.list = list;
                         this.enable = more;
                     }
-                    this.changeModalColor(0);
+                    if (reload) this.changeModalColor(0);
                     this.state = this.list.length > 0 ? 'data' : 'empty';
                 } catch (e) {
                     this.state = 'error';
