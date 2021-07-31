@@ -1,6 +1,6 @@
 export default [
-    {
-        path: '/play/detail',
-        component: () => import('@/page/play/PlayDetail')
-    },
+  {
+    path: '/play/detail',
+    component: () => import('@/page/play/PlayDetail'),
+  },
 ];

@@ -25,16 +25,17 @@
 }
 
 // transition
-@mixin ts($type, $type2:'') {
+@mixin ts($type, $type2: '') {
   @if $type2 != '' {
-    transition: $type .3s cubic-bezier(0.165, 0.84, 0.44, 1), $type2 .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: $type 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+      $type2 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   } @else {
-    transition: $type .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: $type 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
 // 单行省略号
-@mixin ellipsis($line:1) {
+@mixin ellipsis($line: 1) {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -55,7 +56,8 @@
 
 @mixin thumbActive {
   transform: scale(2);
-  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1), -1px -1px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1),
+    -1px -1px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 @mixin track {

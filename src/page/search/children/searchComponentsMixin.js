@@ -1,7 +1,7 @@
 export default {
-    props: {
-        list: {
-            type: Array
-        }
-    }
+  props: {
+    list: {
+      type: Array,
+    },
+  },
 };

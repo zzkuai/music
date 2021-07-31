@@ -11,27 +11,27 @@ import playlist from './module/playlist.js';
 Vue.use(VueRouter);
 
 export default new VueRouter({
-    base: 'music',
-    mode: 'history',
-    linkActiveClass: 'active',
-    linkExactActiveClass: 'exact-active',
-    routes: [
-        {
-            path: '/',
-            redirect: '/discover',
-            meta: {
-                home: true
-            }
-        },
-        ...discover,
-        ...singer,
-        ...search,
-        ...album,
-        ...play,
-        ...playlist,
-        {
-            path: '*',
-            component: () => import('../page/404/NotFound')
-        }
-    ]
+  base: 'music',
+  mode: 'history',
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exact-active',
+  routes: [
+    {
+      path: '/',
+      redirect: '/discover',
+      meta: {
+        home: true,
+      },
+    },
+    ...discover,
+    ...singer,
+    ...search,
+    ...album,
+    ...play,
+    ...playlist,
+    {
+      path: '*',
+      component: () => import('../page/404/NotFound'),
+    },
+  ],
 });

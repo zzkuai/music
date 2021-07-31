@@ -15,11 +15,13 @@ export const getHotSearch = () => get(searchHotUrl);
  * @param limit 数据长度
  * @returns {Promise<*|undefined>}
  */
-export const getSearch = (keywords, type, offset = 0, limit = 20) => get(searchUrl, { keywords, type, offset, limit });
+export const getSearch = (keywords, type, offset = 0, limit = 20) =>
+  get(searchUrl, { keywords, type, offset, limit });
 
 /**
  * 搜索建议
  * @param keywords 关键词
  * @returns {Promise<*|undefined>}
  */
-export const getSearchSuggest = (keywords) => get(searchSuggestUrl, { keywords, type: 'mobile' });
+export const getSearchSuggest = (keywords) =>
+  get(searchSuggestUrl, { keywords, type: 'mobile' });

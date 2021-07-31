@@ -1,7 +1,14 @@
 import { get } from '@/api/request';
 import {
-    artistUrl, artistAvatarUrl, artistTopUrl, artistListUrl, artistSongUrl,
-    artistAlbumUrl, artistMVUrl, artistDescUrl, artistSimiUrl,
+  artistUrl,
+  artistAvatarUrl,
+  artistTopUrl,
+  artistListUrl,
+  artistSongUrl,
+  artistAlbumUrl,
+  artistMVUrl,
+  artistDescUrl,
+  artistSimiUrl,
 } from '@/api/url';
 
 /**
@@ -24,7 +31,8 @@ export const getArtistAvatar = (id) => get(artistAvatarUrl, { id });
  * @param limit 数量
  * @returns {Promise<*|undefined>}
  */
-export const getTopArtist = ({ offset = 0, limit = 20 }) => get(artistTopUrl, { offset, limit });
+export const getTopArtist = ({ offset = 0, limit = 20 }) =>
+  get(artistTopUrl, { offset, limit });
 
 /**
  * 歌手列表
@@ -33,7 +41,8 @@ export const getTopArtist = ({ offset = 0, limit = 20 }) => get(artistTopUrl, { 
  * @param limit 数量
  * @returns {Promise<*|undefined>}
  */
-export const getArtistList = ({ offset = 0, cat, limit = 20 }) => get(artistListUrl, { offset, cat, limit });
+export const getArtistList = ({ offset = 0, cat, limit = 20 }) =>
+  get(artistListUrl, { offset, cat, limit });
 
 /**
  * 歌手热门单曲
@@ -49,7 +58,8 @@ export const getArtistSong = (id) => get(artistSongUrl, { id });
  * @param offset 分页
  * @returns {Promise<*|undefined>}
  */
-export const getArtistAlbum = (id, { offset = 0, limit = 20 }) => get(artistAlbumUrl, { id, offset, limit });
+export const getArtistAlbum = (id, { offset = 0, limit = 20 }) =>
+  get(artistAlbumUrl, { id, offset, limit });
 
 /**
  * 歌手mv
@@ -58,7 +68,8 @@ export const getArtistAlbum = (id, { offset = 0, limit = 20 }) => get(artistAlbu
  * @param offset 分页
  * @returns {Promise<*|undefined>}
  */
-export const getArtistMV = (id, { offset, limit = 20 }) => get(artistMVUrl, { id, offset, limit });
+export const getArtistMV = (id, { offset, limit = 20 }) =>
+  get(artistMVUrl, { id, offset, limit });
 
 /**
  * 歌手描述
@@ -73,4 +84,3 @@ export const getArtistDesc = (id) => get(artistDescUrl, { id });
  * @returns {Promise<*|undefined>}
  */
 export const getSimiSinger = (id) => get(artistSimiUrl, { id });
-

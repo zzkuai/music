@@ -12,4 +12,3 @@ export const getSongLink = (id) => get(songLinkUrl, { id });
 
 // 歌词
 export const getLyric = (id) => get(lyricUrl, { id });
-

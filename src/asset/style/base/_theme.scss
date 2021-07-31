@@ -1,7 +1,6 @@
-@import "../common/color";
+@import '../common/color';
 
-
-[data-theme="day"] {
+[data-theme='day'] {
   .theme-title {
     color: $day-title;
   }
@@ -40,7 +39,7 @@
   }
 }
 
-[data-theme="night"] {
+[data-theme='night'] {
   .theme-title {
     color: $night-title;
   }

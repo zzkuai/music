@@ -1,5 +1,11 @@
 import Vue from 'vue';
-import { numberFormat, readCountFormat, playTimeFormat, dateFormat, commentTimeFormat } from '@/util/format';
+import {
+  numberFormat,
+  readCountFormat,
+  playTimeFormat,
+  dateFormat,
+  commentTimeFormat,
+} from '@/util/format';
 
 Vue.filter('numberFormat', numberFormat);
 Vue.filter('readCountFormat', readCountFormat);

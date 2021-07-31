@@ -1,4 +1,4 @@
-@import "../common/color";
+@import '../common/color';
 
 .modal {
   position: fixed;
@@ -10,7 +10,7 @@
   border-radius: 15px;
   z-index: 99;
   transform: translate3d(-50%, 0, 0);
-  animation: modal 3s .5s linear forwards;
+  animation: modal 3s 0.5s linear forwards;
 
   &.ignore {
     font-size: 12px;

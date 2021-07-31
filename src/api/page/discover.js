@@ -1,5 +1,10 @@
 import { get } from '@/api/request';
-import { discoverAlbumUrl, discoverBannerUrl, discoverSongUrl, discoverPlaylistUrl } from '@/api/url';
+import {
+  discoverAlbumUrl,
+  discoverBannerUrl,
+  discoverSongUrl,
+  discoverPlaylistUrl,
+} from '@/api/url';
 
 // 轮播
 export const getBanner = () => get(discoverBannerUrl);

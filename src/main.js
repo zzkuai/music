@@ -11,13 +11,13 @@ import '@/asset/style/base/base.scss';
 
 Vue.config.productionTip = false;
 Vue.config.errorHandler = function (err) {
-    if (IS_DEV) {
-        console.error(err);
-    }
+  if (IS_DEV) {
+    console.error(err);
+  }
 };
 
 new Vue({
-    router,
-    store,
-    render: h => h(App),
+  router,
+  store,
+  render: (h) => h(App),
 }).$mount('#app');
